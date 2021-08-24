@@ -14,6 +14,7 @@ class TestOptions(BaseOptions):
         parser.add_argument('--phase', type=str, default='test', help='train, val, test, etc')
         # Dropout and Batchnorm has different behavioir during training and test.
         parser.add_argument('--eval', action='store_true', help='use eval mode during test time.')
+        parser.add_argument('--simple_test', action='store_true', help='if specified, do simple A2B evaluation')
         parser.add_argument('--num_test', type=int, default=50, help='how many test images to run')
         # rewrite devalue values
         parser.set_defaults(model='test')
