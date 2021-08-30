@@ -27,6 +27,7 @@ See training and test tips at: https://github.com/junyanz/pytorch-CycleGAN-and-p
 See frequently asked questions at: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/qa.md
 """
 import os
+from collections import OrderedDict
 from options.test_options import TestOptions
 from data import create_dataset
 from models import create_model
